@@ -3,7 +3,7 @@ import sqlite3
 
 
 def get_sources(keyword,country):
-    api_key = "f8e007f918624cd08d0980e563efa69d"
+    api_key = "YOUR_API_KEY"
 
     url = "https://newsapi.org/v2/top-headlines?apikey={}".format(api_key)
 
