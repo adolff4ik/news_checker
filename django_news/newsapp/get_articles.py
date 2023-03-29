@@ -2,7 +2,7 @@ import requests
 
 
 def get_articles(keyword,country):
-    api_key = "f8e007f918624cd08d0980e563efa69d"
+    api_key = "api_key"
 
     url = "https://newsapi.org/v2/top-headlines?apikey={}".format(api_key)
 
