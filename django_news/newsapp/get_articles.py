@@ -20,14 +20,5 @@ def get_articles(keyword,country):
     return req_json
 
 
-def articles(keyword, req_json, i):
-    pubdate = req_json["articles"][i]["publishedAt"]
-    name = req_json["articles"][i]["source"]["name"]
-    title = req_json["articles"][i]["title"]
-    description = req_json["articles"][i]["description"]
-    link = req_json["articles"][i]["url"]
-
-    return keyword,pubdate,name,title,description,link
-
 if __name__ == "__main__":
     get_articles(keyword = "biden",country = "us")
