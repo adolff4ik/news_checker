@@ -44,4 +44,4 @@ def search(request):
         context = {'country': country, 'keyword': keyword, 'results': results}
         return render(request, 'newsapp/search_results.html', context)
     else:
-        return render(request, 'newsapp/search_form.html')
+        return render(request, 'newsapp/search_results.html')
