@@ -1,2 +1,2 @@
 # news_checker
-It is the app which (on this stage) at the click of a button keeps information about any news that can be found by keyword and country that you enter.
+It is the django app which keeps information about any news that can be found by keyword, country and so on, that you enter.
