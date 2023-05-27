@@ -23,16 +23,6 @@ def everything(request):
     return render(request, 'newsapp/everything.html')
 
 
-def articles(request):
-    articles = Article.objects.all()
-
-    context = {
-        'title': 'articles',
-        'articles': articles,
-    }
-
-    return render(request, 'newsapp/articles.html', context=context)
-
 class ShowArticles(DataMixin, ListView):
     paginate_by = 8
     model = Article
