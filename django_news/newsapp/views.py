@@ -52,7 +52,7 @@ class EverythingSearch(SearchView):
 class RegUser(CreateView):
     form_class = RegUserForm
     template_name = 'newsapp/reg.html'
-    success_url = 'https://www.youtube.com/watch?v=9ND_kN7ecHQ&list=LL&index=1'
+    success_url = reverse_lazy('home_url')
     
 
     def form_valid(self, form):
